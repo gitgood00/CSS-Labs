@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Text - Risotto</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <svg width="300" height="200">
+        <defs>
+            <path id="curve" d="M50,100 A100,50 0 1,1 250,100" fill="transparent" />
+        </defs>
+        <text font-size="24" fill="black">
+            <textPath href="#curve" startOffset="50%" text-anchor="middle">Risotto</textPath>
+        </text>
+    </svg>
+</body>
+</html>
