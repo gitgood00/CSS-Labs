@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risotto</title>
+    <style>
+        body {
+            border: 8px solid lightpink;
+            padding: 0px;
+            margin: 20px auto;
+        }
+        
+
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 90%;
+            margin: 5px auto;
+            gap: 0px;
+        }
+
+        .container {
+            font-size: 18px;
+            border: 5px solid red;
+            padding: 10px;
+            margin: px;
+        }
+
+        .blank {
+            grid-column: span 3;
+            height: 25px;
+        }
+
+        .centered {
+            grid-column: span 3;
+            text-align: center;  
+        }
+
+        .columnspan {
+            
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .ingredients {
+
+            gap: 5px;
+            text-align: center;
+        }
+
+        .span-3 {
+            grid-column: span 3;
+            text-align: center;
+        }
+        .svg-container {
+    padding: 1px;
+    margin: 0 auto;
+    width: 300px;
+    height:80px;
+    align-items: center;
+}
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gridcontainer">
+            <div class="blank"></div>
+
+            <div class="centered">
+                <div class="svg-container">
+                    <svg width="300" height="200">
+                        <defs>
+                            <path id="curve" d="M50,100 A100,50 0 1,1 250,100" fill="transparent" />
+                        </defs>
+                        <text font-size="24" fill="black">
+                            <textPath href="#curve" startOffset="50%" text-anchor="middle">Risotto</textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+                
+            <div class="centered">
+                Risotto is a dish from northern Italy made with rice and stock (a liquid flavored with ingredients such as vegetables or chicken). 
+                The most important ingredient is good quality risotto rice, ideally carnaroli or vialone nano, both of which are available from good food shops. 
+                When cooked, this rice has a firm texture as well as a creamy softness. This may be hard to imagine, but when you have cooked a good risotto, you'll see what I mean.
+            </div>
+
+            <div class="centered">
+                Once you know how to make a basic risotto, you can add other ingredients, like vegetables or meat. In Milan, risotto is made with saffron, which adds a beautiful golden color.
+            </div>
+
+            <div class="centered"><hr></div>
+
+
+                <div class="columnspan">Serves</div>
+                <div class="columnspan">Preparation Time</div>
+                <div class="columnspan">Cooking Time</div>
+                <div class="ingredients">4</div>
+                <div class="ingredients">10 minutes</div>
+                <div class="ingredients">40 minutes</div>
+
+
+            <div class="centered"><hr></div>
+
+
+                <div class="span-3">1&frac12; ounces Parmesan cheese</div>
+                <div class="span-3">-</div>
+                <div class="span-3">5–6&frac12; cups vegetable or chicken stock</div>
+                <div class="span-3">-</div>
+                <div class="span-3">(if you are not using fresh stock, use a good vegetable bouillon powder)</div>
+                <div class="span-3">-</div>
+                <div class="span-3">1 onion</div>
+                <div class="span-3">-</div>
+                <div class="span-3">3 tablespoons sweet butter</div>
+                <div class="span-3">-</div>
+                <div class="span-3">1 tablespoon olive oil</div>
+                <div class="span-3">-</div>
+                <div class="span-3">Scant 1&frac34; cups risotto rice</div>
+                <div class="span-3">-</div>
+                <div class="span-3">&frac12; teaspoon saffron threads</div>
+
+        </div>
+    </div>
+</body>
+</html>
